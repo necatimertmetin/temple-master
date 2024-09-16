@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       
-      <Router>
+      <Router  basename="/temple-master">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Landing />} />
