@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/temple-master/static/css/main.28a0a781.css",
+    "main.js": "/temple-master/static/js/main.04fe691c.js",
+    "static/js/453.17110e04.chunk.js": "/temple-master/static/js/453.17110e04.chunk.js",
+    "static/media/gift.mp4": "/temple-master/static/media/gift.8de56e6577285ee7778b.mp4",
+    "static/media/record.jpg": "/temple-master/static/media/record.5a8bf804665e917ec2fc.jpg",
+    "static/media/heart.mp4": "/temple-master/static/media/heart.ecd988287eafef2da2f8.mp4",
+    "static/media/text.jpg": "/temple-master/static/media/text.c9947e91ceb6087ba613.jpg",
+    "static/media/ipad.png": "/temple-master/static/media/ipad.319bdcaf293a315cce74.png",
+    "static/media/film.jpg": "/temple-master/static/media/film.ca9f9dd1f2dee0ba77c3.jpg",
+    "static/media/placeholder.jpg": "/temple-master/static/media/placeholder.1cc8522c34e12c98ab84.jpg",
+    "static/media/foto.jpg": "/temple-master/static/media/foto.3d77cd6936649553fec0.jpg",
+    "static/media/user.png": "/temple-master/static/media/user.1540e1fefbe93ff7d4f6.png",
+    "static/media/social-network.png": "/temple-master/static/media/social-network.2513b545de76ef6c85c9.png",
+    "static/media/elifinfotosu.jpg": "/temple-master/static/media/elifinfotosu.ea1676e80a95725512b3.jpg",
+    "static/media/pay-per-click.png": "/temple-master/static/media/pay-per-click.754d1208c30e7f466fec.png",
+    "static/media/web-design.png": "/temple-master/static/media/web-design.63116896730883036410.png",
+    "static/media/landscape-photo-frames-500x500.webp": "/temple-master/static/media/landscape-photo-frames-500x500.c0f212c68743c863d83a.webp",
+    "static/media/whatsapp.png": "/temple-master/static/media/whatsapp.bf3cf4a9f6859a55c158.png",
+    "static/media/instagram.png": "/temple-master/static/media/instagram.ece4aaacfde6c8c81987.png",
+    "static/media/arrow.png": "/temple-master/static/media/arrow.26697a46bec83d69d1c8.png",
+    "static/media/spotify.png": "/temple-master/static/media/spotify.2909b976dd7265ba1cc0.png",
+    "static/media/github.png": "/temple-master/static/media/github.81563bbdce34dc956cf8.png",
+    "static/media/telegram.png": "/temple-master/static/media/telegram.0a185cf9d515fee08186.png",
+    "static/media/line.png": "/temple-master/static/media/line.dc6a5524bd2d49d1cb32.png",
+    "static/media/twitter.png": "/temple-master/static/media/twitter.08ca067dbcfa6eadebc1.png",
+    "static/media/snapchat.png": "/temple-master/static/media/snapchat.c0ed06d8850d8ac0fcff.png",
+    "static/media/vk.png": "/temple-master/static/media/vk.d1be3a9f2774948022f5.png",
+    "static/media/youtube.png": "/temple-master/static/media/youtube.5d4b7f5713b11e08ed8e.png",
+    "static/media/patreon.png": "/temple-master/static/media/patreon.01525e4778ddfdbd8f69.png",
+    "index.html": "/temple-master/index.html",
+    "main.28a0a781.css.map": "/temple-master/static/css/main.28a0a781.css.map",
+    "main.04fe691c.js.map": "/temple-master/static/js/main.04fe691c.js.map",
+    "453.17110e04.chunk.js.map": "/temple-master/static/js/453.17110e04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28a0a781.css",
+    "static/js/main.04fe691c.js"
+  ]
+}
