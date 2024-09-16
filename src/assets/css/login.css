@@ -1,0 +1,103 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfff4;
+    height: 100vh;
+}
+
+.video {
+    position: fixed;
+    z-index: 0;
+    background-size: contain;
+    width: 100vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.login-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    height: 90vh;
+    width: 60vh;
+    border-radius: 50px;
+    background: rgba(160, 156, 156, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.login-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 55px;
+    color: #f0f8ff;
+}
+
+.login-button-grad {
+    background-image: linear-gradient(to right, #FEAC5E 0%, #C779D0 51%, #FEAC5E 100%);
+    padding: 5px 25px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.login-button-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    text-decoration: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 230px;
+    margin-bottom: 70px;
+
+}
+
+.login-email-input {
+    font-size: 15px;
+    border-style: solid;
+    border-color: #ddd;
+    outline: none;
+    height: 30px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent;
+    padding: 0px 10px;
+    caret-color: #ddd;
+    color: #ddd;
+}
+
+::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}

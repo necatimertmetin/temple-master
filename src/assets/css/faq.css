@@ -1,0 +1,108 @@
+body {
+    background-color: #FBFCF8;
+
+}
+.faq-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 50px;
+}
+.faq-container {
+    padding: 1% 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: Poppins;
+    justify-content: space-between;
+    padding: 0% 50px;
+}
+.category-elements {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #555;
+}
+.faq-category {
+    margin-right: 20px; /* Kategoriler arasında bir boşluk bırakmak için */
+    border-right: 1px solid #5555553f; /* Dikine çizgi oluşturmak için */
+    padding-right: 80px; /* Dikine çizgiden boşluk bırakmak için */
+}
+
+.faq-category-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #555;
+    padding: 10% 20px;
+    
+}
+
+.faq-title {
+    font-weight: 600;
+    font-size: 25px;
+    color: #555;
+    padding: 1% 20px;
+
+}
+.faq-text-area {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 6% 20px;
+    font-family: Poppins;
+    gap: 20px;
+    margin-right: 100vh;
+}
+
+.faq-q {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    border-radius: 10px;
+    border: none;
+    padding: 2% 30px;
+    width: fit-content;
+}
+
+.faq-a {
+    font-weight: 300;
+    color: #666;
+    padding: 2% 30px;
+    width: fit-content;
+
+
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+  }
+  
+  .search-input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0% 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border: transparent;
+    border-radius: 8px;
+    outline: none;
+    background-image: linear-gradient(43deg, #4054b9a2 0%, #c850c080 46%, #ffcd705b 100%);
+    transition: .3s ease;
+    color: #ffffff;
+    font-family: Poppins;
+  }
+  .search-input::placeholder {
+    color: #ffffff;
+  }
+  
+  
+/*{
+    outline: 1px solid red !important;
+}*/
