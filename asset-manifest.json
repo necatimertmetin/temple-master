@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/temple-master/static/css/main.28a0a781.css",
-    "main.js": "/temple-master/static/js/main.04fe691c.js",
+    "main.js": "/temple-master/static/js/main.11296a77.js",
     "static/js/453.17110e04.chunk.js": "/temple-master/static/js/453.17110e04.chunk.js",
     "static/media/gift.mp4": "/temple-master/static/media/gift.8de56e6577285ee7778b.mp4",
     "static/media/record.jpg": "/temple-master/static/media/record.5a8bf804665e917ec2fc.jpg",
@@ -31,11 +31,11 @@
     "static/media/patreon.png": "/temple-master/static/media/patreon.01525e4778ddfdbd8f69.png",
     "index.html": "/temple-master/index.html",
     "main.28a0a781.css.map": "/temple-master/static/css/main.28a0a781.css.map",
-    "main.04fe691c.js.map": "/temple-master/static/js/main.04fe691c.js.map",
+    "main.11296a77.js.map": "/temple-master/static/js/main.11296a77.js.map",
     "453.17110e04.chunk.js.map": "/temple-master/static/js/453.17110e04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28a0a781.css",
-    "static/js/main.04fe691c.js"
+    "static/js/main.11296a77.js"
   ]
 }
