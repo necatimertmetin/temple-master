@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types'; // PropTypes kütüphanesini import edin
 import TextAreaTitle from '../titles/textAreaTitle';
 import TextAreaContent from '../paragraphs/textAreaContent';
+import defaultValues from '../../default-values/defaultValues.json';
 
 const DoubleSideCard = ({ Parameters }) => {
-    const { title, content } = Parameters; // Destructuring ile değerleri al
+    // Varsayılan değerleri state içinde sakla
+    const [defaults, setDefaults] = useState({});
+
+    useEffect(() => {
+        // JSON dosyasından varsayılan değerleri yükle
+        setDefaults(defaultValues);
+    }, []);
+
+    const { title = defaults.title, content = defaults.content } = Parameters || {}; // Eğer Parameters undefined ise varsayılan değerleri kullan
 
     return (
         <div className="double-side-card flex-1">
@@ -30,10 +39,7 @@ DoubleSideCard.propTypes = {
 
 // Varsayılan değer atama
 DoubleSideCard.defaultProps = {
-    Parameters: {
-        title: 'Default Title',         // Varsayılan başlık
-        content: 'Default content goes here.', // Varsayılan içerik
-    },
+    Parameters: {}, // Başlangıçta boş bir nesne
 };
 
 export default DoubleSideCard;

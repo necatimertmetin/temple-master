@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; // PropTypes kütüphanesini import edin
 import TextAreaTitle from '../titles/textAreaTitle';
 import TextAreaContent from '../paragraphs/textAreaContent';
+import defaultValues from '../../default-values/defaultValues.json';
 
 const TextArea = ({ Parameters }) => {
     return (
@@ -23,8 +24,8 @@ TextArea.propTypes = {
 // Varsayılan değer atama
 TextArea.defaultProps = {
     Parameters: {
-        title: 'Default Title',           // Varsayılan başlık
-        content: 'Default content goes here.', // Varsayılan içerik
+        title: defaultValues.title,           // Varsayılan başlık
+        content: defaultValues.content, // Varsayılan içerik
     },
 };
 

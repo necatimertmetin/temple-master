@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // PropTypes kütüphanesini import edin
+import defaultValues from '../../default-values/defaultValues.json';
 
 const TextAreaTitle = ({ title }) => {
     return (
@@ -14,7 +15,7 @@ TextAreaTitle.propTypes = {
 
 // Varsayılan değer atama
 TextAreaTitle.defaultProps = {
-    title: 'Default Title', // Varsayılan başlık
+    title: defaultValues.title, // Varsayılan başlık
 };
 
 export default TextAreaTitle;

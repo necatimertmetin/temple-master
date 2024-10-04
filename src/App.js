@@ -7,7 +7,7 @@ import Landing from './components/pages/landing';
 import Template from './components/pages/template';
 import AnimatedCursor from "react-animated-cursor";
 import Dashboard from './components/pages/dashboard';
-import Createtemplate from './components/pages/createTemplate';
+import Createtemplate from './components/pages/template-editor/createTemplate';
 import Faq from './components/preferences/faq';
 
 

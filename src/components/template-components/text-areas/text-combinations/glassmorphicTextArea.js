@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; // PropTypes kütüphanesini import edin
 import TextAreaTitle from '../titles/textAreaTitle';
 import TextAreaContent from '../paragraphs/textAreaContent';
-
+import defaultValues from '../../default-values/defaultValues.json';
 const GlassmorphicTextArea = ({ Parameters }) => {
     return (
         <div className="text-area flex-1 flex-centered x">
@@ -23,8 +23,8 @@ GlassmorphicTextArea.propTypes = {
 // Varsayılan değer atama
 GlassmorphicTextArea.defaultProps = {
     Parameters: {
-        title: 'Default Title',           // Varsayılan başlık
-        content: 'Default content goes here.', // Varsayılan içerik
+        title: defaultValues.title,           // Varsayılan başlık
+        content: defaultValues.content, // Varsayılan içerik
     },
 };
 
