@@ -9,6 +9,7 @@ import {
   faFileAlt,
   faMusic,
   faLink,
+  faThLarge,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -24,12 +25,12 @@ const TemplateSidebar = () => {
     { title: "Fotograf", key: "photo", icon: faImage },
     { title: "Video", key: "video", icon: faVideo },
     { title: "Metin", key: "text", icon: faFileAlt },
-    { title: "Ses", icon: faMusic },
-    { title: "Link", icon: faLink },
-    { title: "Twitter", icon: faTwitter },
-    { title: "Instagram", icon: faInstagram },
-    { title: "YouTube", icon: faYoutube },
-    { title: "Facebook", icon: faFacebook },
+    { title: "Ses", key: "audio", icon: faMusic },
+    { title: "Link", key: "link", icon: faLink },
+    { title: "Twitter", key: "twitter", icon: faTwitter },
+    { title: "Instagram", key: "instagram", icon: faInstagram },
+    { title: "YouTube", key: "youtube", icon: faYoutube },
+    { title: "Facebook", key: "facebook", icon: faFacebook }
   ];
 
   const handleSidebarItemSelect = (item) => {

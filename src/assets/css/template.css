@@ -23,11 +23,16 @@ body {
 
 .template-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    padding: 50px;
+    gap: 50px;
+    color: #333;
+    flex: 1;
 }
+
+
 
 .big-title {
     font-family: "Caveat", cursive;
@@ -47,14 +52,6 @@ body {
 
 
 
-}
-
-.template-row {
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-    gap: 50px;
-    color: #eee;
 }
 
 .flex-1 {
