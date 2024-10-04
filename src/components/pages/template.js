@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"; // Import useParams
 import "../../assets/css/template.css";
 import FlexRowPart from "../template-components/flex-parts/row-part/flexRowPart";
 import axios from 'axios';
 import heart from "../../assets/media/heart.mp4";
 
 const Template = () => {
+    const { templateId } = useParams(); // Get templateId from URL
     const [templateData, setTemplateData] = useState(null);
     const [error, setError] = useState(null);
 
@@ -12,7 +14,7 @@ const Template = () => {
         const fetchData = async () => {
             try {
                 const token = getCookie('jwt'); // Retrieve token from cookie
-                const response = await axios.get('http://109.228.228.154:8080/api/template?templateId=1', {
+                const response = await axios.get(`http://localhost:8080/api/template?templateId=${templateId}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${token}` // Use token in the Authorization header
@@ -27,7 +29,7 @@ const Template = () => {
         };
 
         fetchData();
-    }, []);
+    }, [templateId]); // Add templateId as a dependency
 
     if (error) {
         return <div>Error: {error.message}</div>;
@@ -36,7 +38,6 @@ const Template = () => {
     if (!templateData) {
         return <div>Loading...</div>;
     }
-
 
     return (
         <>
@@ -48,10 +49,7 @@ const Template = () => {
                 {templateData.Parts.map((part, index) => (
                     <FlexRowPart key={index} Components={part.Components} />
                 ))}
-
             </div>
-
-
         </>
     );
 };

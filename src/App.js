@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Landing />} />
-          <Route path="/template" element={<Template />} />
+          <Route path="/template/:templateId" element={<Template />} />
           <Route path="/dashboard" exact element={<Dashboard />} />
           <Route path="/createTemplate" element={<Createtemplate />} />
           <Route path="/faq" element={<Faq />} />

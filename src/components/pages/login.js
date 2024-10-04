@@ -44,7 +44,7 @@ const Login = () => {
         //mertin login endpointini yaz:
         //mertin login endpointi : http://109.228.228.154:8080/login
 
-        const endpointLinki = 'http://109.228.228.154:8080/login';
+        const endpointLinki = 'http://localhost:8080/login';
 
         try {
             const donenVeri = await axios.post(endpointLinki, endpointeGidecekVeriler);
@@ -62,7 +62,8 @@ const Login = () => {
 
             }
             else {
-                alert("bir hata olustu lutfen tekrar deneyin", error.response.data);
+                alert( error.response.data);
+                console.log(error)
 
             }
         }

@@ -1,22 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // PropTypes kütüphanesini import edin
 import TextAreaTitle from '../titles/textAreaTitle';
 import TextAreaContent from '../paragraphs/textAreaContent';
 
 const DoubleSideCard = ({ Parameters }) => {
+    const { title, content } = Parameters; // Destructuring ile değerleri al
 
     return (
-        <div class="double-side-card flex-1">
-            <div class="double-side-card-inner">
-                <div class="double-side-card-front">
-                    {Parameters?.title && <TextAreaTitle title={Parameters?.title} />}
-
+        <div className="double-side-card flex-1">
+            <div className="double-side-card-inner">
+                <div className="double-side-card-front">
+                    {title && <TextAreaTitle title={title} />}
                 </div>
-                <div class="double-side-card-back">
-                    {Parameters?.content && <TextAreaContent content={Parameters?.content} />}
+                <div className="double-side-card-back">
+                    {content && <TextAreaContent content={content} />}
                 </div>
             </div>
         </div>
+    );
+};
 
-    )
-}
+// Prop types tanımlama
+DoubleSideCard.propTypes = {
+    Parameters: PropTypes.shape({
+        title: PropTypes.string,
+        content: PropTypes.string,
+    }),
+};
+
+// Varsayılan değer atama
+DoubleSideCard.defaultProps = {
+    Parameters: {
+        title: 'Default Title',         // Varsayılan başlık
+        content: 'Default content goes here.', // Varsayılan içerik
+    },
+};
+
 export default DoubleSideCard;
