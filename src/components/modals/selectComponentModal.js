@@ -17,7 +17,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { getComponentsByType } from "../template-components/component-utils/componentFinder";
 
-const SelectComponentModal = ({ isOpen, closeModal, handleComponentSelect }) => {
+const SelectComponentModal = ({
+  isOpen,
+  closeModal,
+  handleComponentSelect,
+}) => {
   const modalRef = useRef(null); // Reference for the modal content
   const [componentList, setComponentList] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0); // State to manage selected tab
@@ -72,23 +76,26 @@ const SelectComponentModal = ({ isOpen, closeModal, handleComponentSelect }) => 
   return (
     <div className="modal-overlay">
       <div className="modal-content" ref={modalRef}>
-        <Tabs selectedIndex={selectedIndex} onSelect={index => { 
+        <Tabs
+          selectedIndex={selectedIndex}
+          onSelect={(index) => {
             setSelectedIndex(index); // Update selected index on tab select
             handleSidebarItemSelect(itemTypeList[index]); // Update component list
-          }}>
+          }}
+        >
           <TabList>
             {itemTypeList.map((item, index) => (
-              <Tab key={index}>
-                {item.title}
-              </Tab>
+              <Tab key={index}>{item.title}</Tab>
             ))}
           </TabList>
           {itemTypeList.map((_, index) => (
             <TabPanel key={index}>
               {componentList.map((item, componentIndex) => (
-         
-         <button className="button" onClick={() => handleComponentSelect(item.component)} >
-                <item.component key={componentIndex} />
+                <button
+                  className="button"
+                  onClick={() => handleComponentSelect(item.component)}
+                >
+                  <item.component key={componentIndex} />
                 </button>
               ))}
             </TabPanel>

@@ -16,6 +16,9 @@ const TemplateDesigner = () => {
     setParts(parts.filter(part => part.id !== id));
   };
 
+  const onDataChange = (data) => {
+    console.log(data)
+  }
   return (
     <div className='template-designer-container'>
     
@@ -24,7 +27,7 @@ const TemplateDesigner = () => {
       {parts.map((part, index) => (
         <div className='flex-row-part-edit-container' key={part.id}>
           <button className='flex-row-delete-button' onClick={() => deletePart(part.id)}>Delete</button>
-          <FlexRowPart test={part.id}/>
+          <FlexRowPart test={part.id} onDataChange={onDataChange}/>
         </div>
       ))}
         <div className='flex-row-part-iter' onClick={addPart}>Add Part</div>

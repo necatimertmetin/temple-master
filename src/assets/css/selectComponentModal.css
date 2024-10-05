@@ -1,115 +1,121 @@
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 90%; /* Responsive width */
-  }
-  
-  .tab-navigation {
-    display: flex;
-    border-bottom: 2px solid #007BFF; /* Active color underline */
-    margin-bottom: 10px;
-  }
-  
-  .tab-button {
-    flex: 1;
-    padding: 12px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    transition: color 0.3s, border-bottom 0.3s;
-    font-weight: bold;
-    font-size: 16px;
-    color: #888; /* Default color */
-  }
-  
-  .tab-button.active {
-    color: #007BFF; /* Active tab color */
-    border-bottom: 2px solid #007BFF; /* Active underline */
-  }
-  
-  .tab-button:hover {
-    color: #0056b3; /* Hover color */
-  }
-  
-  .tab-content {
-    padding: 10px;
-  }
-  
-  .close-button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .close-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .react-tabs__tab-panel--selected {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 90%; /* Responsive width */
+}
 
-    gap: 10px; /* Space between grid items */
-  }
-  .react-tabs__tab-panel--selected > * {
-    flex: 1;
-    margin: 30px;
-    box-shadow: 0px 0px 10px #000;
-    max-width: 200px;
-    min-height: 100px;
-    height: auto;
-    cursor: pointer;
-    position: relative; /* Set position relative for the overlay effect */
-    overflow: hidden; /* Hide overflow to prevent inner elements from breaking out */
-  }
-  
-  /* Hover effect */
-  .react-tabs__tab-panel--selected > *:hover {
-    /* Optional: You can change the box-shadow or any property to indicate hover */
-    box-shadow: 0px 0px 15px #888;
-  }
-  
-  /* Create the overlay effect */
-  .react-tabs__tab-panel--selected > *:hover::before {
-    content: ""; /* Required for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
-    z-index: 1; /* Position overlay above the content */
-    transition: background-color 0.3s ease; /* Smooth transition */
-  }
-  
-  /* Optional: Change overlay on hover */
-  .react-tabs__tab-panel--selected > *:hover::before {
-    background-color: rgba(0, 0, 255, 0.3); /* Change color on hover */
-  }
-  
-  .button{
-    background-color: transparent;
-    border: none
-  }
+.tab-navigation {
+  display: flex;
+  border-bottom: 2px solid #007bff; /* Active color underline */
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+  color: #888; /* Default color */
+}
+
+.tab-button.active {
+  color: #007bff; /* Active tab color */
+  border-bottom: 2px solid #007bff; /* Active underline */
+}
+
+.tab-button:hover {
+  color: #0056b3; /* Hover color */
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+.close-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.react-tabs__tab-panel--selected {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+
+  gap: 10px; /* Space between grid items */
+}
+.react-tabs__tab-panel--selected > * {
+  flex: 1;
+  margin: 30px;
+  box-shadow: 0px 0px 10px #000;
+  max-width: 200px;
+  min-height: 100px;
+  height: auto;
+  cursor: pointer;
+  position: relative; /* Set position relative for the overlay effect */
+  overflow: hidden; /* Hide overflow to prevent inner elements from breaking out */
+}
+
+/* Hover effect */
+.react-tabs__tab-panel--selected > *:hover {
+  /* Optional: You can change the box-shadow or any property to indicate hover */
+  box-shadow: 0px 0px 15px #888;
+}
+
+/* Create the overlay effect */
+.react-tabs__tab-panel--selected > *:hover::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+  z-index: 1; /* Position overlay above the content */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Change overlay on hover */
+.react-tabs__tab-panel--selected > *:hover::before {
+  background-color: rgba(0, 0, 255, 0.3); /* Change color on hover */
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+.title {
+  border: none;
+  background-color: none;
+}
+.title::placeholder {
+  color: #333;
+}
