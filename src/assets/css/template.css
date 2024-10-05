@@ -34,7 +34,12 @@ body {
     min-height: 150px;
 }
 
-
+.template-row > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
 
 .big-title {
     font-family: "Caveat", cursive;

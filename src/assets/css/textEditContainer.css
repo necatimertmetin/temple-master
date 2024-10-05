@@ -1,0 +1,72 @@
+.text-edit-container {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.edit-button.small {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px; /* Düğme boyutunu küçült */
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* İkon boyutunu küçült */
+}
+
+.edit-button.small:hover {
+  background-color: #ddd;
+}
+.edit-button.small:active {
+  background-color: #ccc;
+}
+
+.edit-button.small svg {
+  width: 14px; /* İkonların boyutunu küçült */
+  height: 14px;
+}
+
+.custom-font-picker {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  cursor: pointer;
+}
+
+.selected-font {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.font-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.font-option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.font-option:hover {
+  background-color: #e0e0e0;
+}
