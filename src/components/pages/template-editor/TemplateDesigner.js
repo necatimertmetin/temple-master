@@ -26,8 +26,8 @@ const TemplateDesigner = () => {
       {/* Render parts dynamically */}
       {parts.map((part, index) => (
         <div className='flex-row-part-edit-container' key={part.id}>
-          <button className='flex-row-delete-button' onClick={() => deletePart(part.id)}>Delete</button>
-          <FlexRowPart test={part.id} onDataChange={onDataChange}/>
+       
+          <FlexRowPart test={part.id} part={part} onDataChange={onDataChange} deletePart={deletePart}/>
         </div>
       ))}
         <div className='flex-row-part-iter' onClick={addPart}>Add Part</div>

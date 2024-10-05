@@ -5,7 +5,7 @@ import TemplateDesigner from "./TemplateDesigner";
 const CreateTemplate = () => {
   return (
     <div className="template-creation-container">
-      <TemplateSidebar />
+
 
       <TemplateDesigner />
     </div>

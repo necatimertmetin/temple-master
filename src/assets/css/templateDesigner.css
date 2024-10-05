@@ -28,19 +28,102 @@
     transition: all 0.3s ease; /* Smooth transition for hover effects */
   }
   
+
   .flex-row-part-iter:hover {
     background-color: #f0f0f0; /* Change background color on hover */
     border-color: #555; /* Change border color on hover */
     color: #555; /* Change text color on hover */
     cursor: pointer;
   }
-  .flex-row-delete-button {
+  .part-edit-container{
     position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+  .part-edit-button{
+    padding: 10px;
+    width: 38px;
+  }
+  .part-edit-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 0px;
+    overflow: hidden;
+    transition: .2s ease;
+    border-bottom-left-radius:  100px;
+    border-bottom-right-radius:  100px;
+  }
+  .part-edit-button-container-visible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 120px;
+    overflow: hidden;
+    transition: .2s ease;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius:  100px;
+  }
+  .flex-row-edit-button {
+    background-color: #2196f3; /* Mavi arka plan - düzenleme işlemi için */
+    color: white; /* Beyaz metin rengi */
+    border: none; /* Varsayılan sınırı kaldır */
+ 
+    border-radius: 50px; /* Yuvarlak köşeler */
+    font-size: 16px; /* Yazı boyutunu artır */
+    font-weight: bold; /* Kalın yazı */
+    cursor: pointer; /* Hover ile imleci pointer yap */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover etkisi için geçiş */
+  }
+  
+  .flex-row-edit-button:hover {
+    background-color: #1976d2; /* Hover'da daha koyu mavi */
+    transform: scale(1.05); /* Hover'da biraz büyüme */
+  }
+  
+  .flex-row-edit-button:active {
+    background-color: #1565c0; /* Basılı tutarken daha koyu renk */
+  }
+
+  
+  .flex-row-add-button {
+    background-color: #4caf50; /* Yeşil arka plan - ekleme işlemi için */
+    color: white; /* Beyaz metin rengi */
+    border: none; /* Varsayılan sınırı kaldır */
+
+    border-radius: 50px; /* Yuvarlak köşeler */
+    font-size: 16px; /* Yazı boyutunu artır */
+    font-weight: bold; /* Kalın yazı */
+    cursor: pointer; /* Hover ile imleci pointer yap */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover etkisi için geçiş */
+  }
+  
+  .flex-row-add-button:hover {
+    background-color: #388e3c; /* Hover üzerinde daha koyu yeşil */
+    transform: scale(1.05); /* Hover'da biraz büyüme */
+  }
+  
+  .flex-row-add-button:active {
+    background-color: #2e7d32; /* Basılı tutarken daha koyu renk */
+  }
+
+  
+  .flex-row-delete-button {
+    
     background-color: #ff4d4f; /* Red background for delete action */
     color: white; /* White text color */
     border: none; /* Remove default border */
-    padding: 10px 20px; /* Padding to make the button larger */
-    border-radius: 10px; /* Rounded corners */
+
+    border-radius: 50px; /* Rounded corners */
+    top: 0;
+    left: 0;
     font-size: 16px; /* Increase font size */
     font-weight: bold; /* Bold text */
     cursor: pointer; /* Change cursor to pointer on hover */
