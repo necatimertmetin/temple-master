@@ -22,7 +22,7 @@ const TextAreaTitle = ({ title, editable, onDataChange }) => {
     setSelectedFont(font); // Update the selected font state
   };
   const onFontSizeChange = (size) => {
-    setFontSize(size)
+    setFontSize(size); // font size changed
   }
 
   return (
