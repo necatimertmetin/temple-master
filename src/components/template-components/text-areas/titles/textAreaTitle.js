@@ -9,7 +9,7 @@ const TextAreaTitle = ({ title, editable, onDataChange }) => {
   const [localEditable, setLocalEditable] = useState(editable);
   const [textEditor, setTextEditor] = useState(false);
   const [selectedFont, setSelectedFont] = useState("Roboto"); // Default font
-
+  const [fontSize, setFontSize] = useState(14);
   // Handle input change
   const handleInputChange = (event) => {
     const newValue = event.target.value;
@@ -21,6 +21,9 @@ const TextAreaTitle = ({ title, editable, onDataChange }) => {
   const handleSelectFont = (font) => {
     setSelectedFont(font); // Update the selected font state
   };
+  const onFontSizeChange = (size) => {
+    setFontSize(size)
+  }
 
   return (
     <>
@@ -33,9 +36,9 @@ const TextAreaTitle = ({ title, editable, onDataChange }) => {
             placeholder={defaultValues.title} // Use default title as placeholder
             onChange={handleInputChange} // Trigger when input changes
             onFocus={() => setTextEditor(!textEditor)}
-            style={{ fontFamily: selectedFont }} // Apply selected font to input
+            style={{ fontFamily: selectedFont, fontSize: fontSize+"px" }} // Apply selected font to input
           />
-          {textEditor && <TextEditContainer onSelectFont={handleSelectFont} />}
+          <TextEditContainer onSelectFont={handleSelectFont} onFontSizeChange={onFontSizeChange}/>
         </div>
       ) : (
         <div className="title" style={{ fontFamily: selectedFont }}>

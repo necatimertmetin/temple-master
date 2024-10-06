@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "@fontsource/roboto"; // Google Fonts'tan Roboto
 import "@fontsource/open-sans"; // Google Fonts'tan Open Sans
 import "@fontsource/lobster"; // Google Fonts'tan Lobster
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const FontPicker = ({ fonts, onSelectFont }) => {
   const [selectedFont, setSelectedFont] = useState(fonts[0]);
@@ -20,9 +23,10 @@ const FontPicker = ({ fonts, onSelectFont }) => {
   };
 
   return (
-    <div className="custom-font-picker" style={{ margin: "20px", fontFamily: selectedFont }}>
-      <div className="selected-font" onClick={toggleDropdown}>
-        {selectedFont} ▼
+    <div className="" style={{ fontFamily: selectedFont }}>
+         <div className="edit-button small" onClick={toggleDropdown} style={{ display: 'flex', alignItems: 'center' }}>
+        {selectedFont} 
+        <FontAwesomeIcon icon={dropdownOpen ? faChevronUp : faChevronDown} style={{ marginLeft: '8px' }} />
       </div>
       {dropdownOpen && (
         <ul className="font-dropdown">

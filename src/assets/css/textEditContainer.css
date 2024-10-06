@@ -4,13 +4,13 @@
   left: 50%;
   transform: translate(-50%);
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 5px;
   display: flex;
   gap: 5px;
+  background-color: #f0f0f0;
 }
 
 .edit-button.small {
-  background-color: #f0f0f0;
   border: none;
   padding: 5px; /* Düğme boyutunu küçült */
   cursor: pointer;
@@ -34,39 +34,69 @@
 }
 
 .custom-font-picker {
-  position: absolute;
-  top: 100%;
-  width: 200px;
   cursor: pointer;
 }
 
 .selected-font {
-  padding: 10px;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  font-size: 16px;
 }
 
 .font-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
   background-color: #fff;
   border: 1px solid #ccc;
   z-index: 1;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-height: 150px;
   overflow-y: auto;
 }
 
 .font-option {
-  padding: 10px;
-  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .font-option:hover {
   background-color: #e0e0e0;
+}
+
+.font-size-dropdown {
+  position: relative;
+}
+.font-size-selector {
+  display: flex;
+  gap: 5px;
+}
+.font-size-input {
+  text-align: center;
+  width: 24px;
+  background-color: #f0f0f0;
+}
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  width: 100px; /* Set width according to your design */
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.vertical-separator {
+  flex: 1;
+  width: 1px;
+  background-color: #333;
 }
